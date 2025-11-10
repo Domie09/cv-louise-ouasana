@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway-Regular.woff2);
+    src: url(../fonts/Raleway-Regular.ttf);
+    src: url(../fonts/Raleway-Italic.woff2);
+    src: url(../fonts/Raleway-Italic.ttf);
+    src: url(../fonts/Raleway-Bold.woff2);
+    src: url(../fonts/Raleway-Bold.ttf);   
+}
+
+/*mise en forme globale*/
+
+html {
+    justify-content: center;
+    
+}
+html , body 
+{
+    box-sizing: content-box;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+html {
+    background-color: #f3f3f3;
+}
+
+h1 {
+    font-family: "lato" , sans-serif;
+}
+
+h2 {
+    font-family: "lato" , sans-serif;
+    font-size: 12px;
+}
+
+h3 {
+    font-family: "lato" , sans-serif;
+}
+
+h4 {
+    font-family: "lato" , sans-serif;
+}
+
+h5 {
+    font-family: "lato" , sans-serif;
+}
+
+p {
+    font-family: "Raleway", sans-serif;
+    font-weight:normal;
+    font-size: 10px;
+}
+
+.progress {
+    font-family: "Raleway", sans-serif;
+    font-weight:normal;
+    font-size: 10px;
+}
+
+li {
+    font-family: "Raleway", sans-serif;
+    font-weight:normal;
+    font-size: 10px;
+}
+
+.checked {
+  color: orange;
+}
+
+fieldset {
+    border: 0;
+    background-color: #dddddd;
+
+}
+
+/*style bandeau haut*/
+
+.grid-1 {
+    background-color: #17abb3;
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 3;
+    align-content: center;
+    justify-content: center;
+}
+
+.picto {
+    grid-column: 1;
+    grid-row: 1;
+
+}
+
+.information {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.info1 {
+    grid-column: 2;
+    grid-row: 3 / 4;
+}
+
+.info2 {
+    grid-column: 4;
+    grid-row: 3 / 4;
+}
+
+image {
+   width: 33.33333%
+    ;
+}
+
+
+/*footer*/
+
+footer{
+    background-color: #17abb3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+    font-family:"Raleway", sans-serif ;
+    font-weight: 300;
+    font-size: xx-small;
+ 
+   
+
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   
+}
+
+/* padding-left: 250px;
+    padding-right: 250px;
