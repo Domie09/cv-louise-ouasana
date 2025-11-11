@@ -1,3 +1,5 @@
+/*mise en forme globale$*/
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
 
 @font-face {
@@ -8,34 +10,33 @@
     src: url(../fonts/Raleway-Italic.ttf);
     src: url(../fonts/Raleway-Bold.woff2);
     src: url(../fonts/Raleway-Bold.ttf);   
+    src: url(../fonts/Raleway-VariableFont_wght.woff2);
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
 }
 
-/*mise en forme globale*/
 
 html {
     justify-content: center;
-    
-}
-html , body 
-{
+    width: 1160px;
     box-sizing: content-box;
-    width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #e3e3e3;
 }
 
-
-html {
-    background-color: #f3f3f3;
+body{
+    background-color: #f5f5f5;
 }
+
 
 h1 {
     font-family: "lato" , sans-serif;
 }
 
-h2 {
+h2  {
     font-family: "lato" , sans-serif;
-    font-size: 12px;
+    font-weight: 400;
+    color: #17abb3;
 }
 
 h3 {
@@ -46,75 +47,246 @@ h4 {
     font-family: "lato" , sans-serif;
 }
 
-h5 {
-    font-family: "lato" , sans-serif;
-}
-
 p {
     font-family: "Raleway", sans-serif;
-    font-weight:normal;
-    font-size: 10px;
+    color: #333333;
 }
 
 .progress {
     font-family: "Raleway", sans-serif;
-    font-weight:normal;
-    font-size: 10px;
 }
 
-li {
+li ul{
     font-family: "Raleway", sans-serif;
-    font-weight:normal;
-    font-size: 10px;
+}
+
+/*mise en forme header*/
+
+header {
+    background-color: #17abb3;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.profile-pic-wrapper {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.nom {
+    font-size: xx-large;
+}
+
+.poste {
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+.head {
+    display: flex;
+    font-family: "lato" , sans-serif;
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+address {
+    line-height: 2;
+    font-family:"Raleway", sans-serif;
+    font-style: normal;
+    color: #ffffff;
+}
+
+
+#col {
+  column-count: 2;
+}
+
+address img {
+    margin-right: 5px;
+
+}
+
+/*mise en forme contenu*/
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    background-color: #fff;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+
+
+
+/*mise en forme Left Column */
+
+aside {
+    font-family:"Raleway", sans-serif;
+    color: #333333;
+    background-color: #f5f5f5;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+aside h2 {
+    color: #17abb3;
+    font-family:"Lato", sans-serif;
+}
+
+.progress {
+    display: flex;
+    justify-content: space-between;
+    font-size: smaller;
+    margin-bottom: 10px;
 }
 
 .checked {
-  color: orange;
+  color: #17abb3;
 }
 
-fieldset {
-    border: 0;
-    background-color: #dddddd;
-
-}
-
-/*style bandeau haut*/
-
-.grid-1 {
-    background-color: #17abb3;
-    display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: 3;
+.barre {
     align-content: center;
-    justify-content: center;
 }
 
-.picto {
-    grid-column: 1;
-    grid-row: 1;
+.francais {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+}
+
+
+.anglais {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
 
 }
 
-.information {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+.espagnol  {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+
 }
 
-.info1 {
-    grid-column: 2;
-    grid-row: 3 / 4;
+.qualite ul li{
+    list-style: none
 }
 
-.info2 {
-    grid-column: 4;
-    grid-row: 3 / 4;
+.interet ul li{
+    list-style: none
 }
 
-image {
-   width: 33.33333%
-    ;
+li::before {
+    content: "\25AA"; 
+    color: #17abb3; 
+    padding: 10px;
 }
 
+/*mise en forme Left Column */
+
+.content {
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.profil {
+    text-indent : 5%;
+    text-align :justify;
+    
+
+}
+
+
+/*Formations et expériences*/
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    font-family:"Raleway", sans-serif;
+    color: #333333;
+    list-style: none;
+}    
+
+.desc .periode {
+    font-family:"Raleway", sans-serif;
+    color: #333333;
+    list-style: none;
+    
+}
+
+.periode {
+    color: #17abb3;
+    font-family:"Raleway", sans-serif;
+    font-weight: 300;
+}
+
+.desc2 {
+    font-style: oblique;
+    color: #333333;
+}
+
+
+.exp {
+    display: flex;
+    justify-content: space-between;
+    font-family:"Raleway", sans-serif;
+    color: #333333;
+    list-style: none;
+}
+
+.exp {
+    font-family:"Raleway", sans-serif;
+    color: #333333;
+    list-style: none;
+}
+.periode {
+    font-family:"Raleway", sans-serif;
+    color: #17abb3;
+}
+
+.missions {
+    font-family:"Raleway", sans-serif;
+    font-style: oblique;
+    color: #333333;
+}
+
+.formation:not(:first-child) { 
+  margin-top: 10px; 
+} 
+
+.job:not(:first-child) { 
+  margin-top: 10px; 
+} 
 
 /*footer*/
 
@@ -122,22 +294,63 @@ footer{
     background-color: #17abb3;
     padding-top: 10px;
     padding-bottom: 10px;
-    text-align: center;
-    color: white;
-    font-family:"Raleway", sans-serif ;
-    font-weight: 300;
-    font-size: xx-small;
- 
-   
-
 }
 
 .social {
+    color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-   
+    justify-content: center;
+    gap: 10px;
 }
 
-/* padding-left: 250px;
-    padding-right: 250px;
+a {
+    color: #fff;
+}
+.maj{
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-style: oblique;
+    font-weight: 300;
+}
+
+/*animation
+
+
+#form:hover {
+  background-color: #e3e3e3;
+  padding: 5px;
+  border-left: 3px solid #17abb3;
+}
+
+
+#exp:hover {
+  background-color: #e3e3e3;
+  padding: 5px;
+  border-left: 3px solid #17abb3;
+}
+*/
+
+.formation:hover
+{
+  background-color: #e3e3e3;
+  padding: 5px;
+  border-left: 3px solid #17abb3;
+}
+
+.job:hover
+{
+  background-color: #e3e3e3;
+  padding: 5px;
+  border-left: 3px solid #17abb3;
+}
+
+.profile-pic:hover {
+  transform: scale(1.5)
+}
+
+.social img:hover {
+    opacity: 70%;
+}
